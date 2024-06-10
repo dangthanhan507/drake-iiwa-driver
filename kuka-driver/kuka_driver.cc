@@ -37,7 +37,7 @@ using drake::lcmt_iiwa_status_telemetry;
 namespace {
 
 const int kNumJoints = 7;
-const int kDefaultPort = 30200;
+const int kDefaultPort = 30002;
 const char* kLcmStatusChannel = "IIWA_STATUS";
 const char* kLcmStatusTelemetryChannel = "IIWA_STATUS_TELEMETRY";
 const char* kLcmCommandChannel = "IIWA_COMMAND";
