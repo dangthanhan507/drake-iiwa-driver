@@ -38,9 +38,9 @@ namespace {
 
 const int kNumJoints = 7;
 const int kDefaultPort = 30002;
-const char* kLcmStatusChannel = "IIWA_STATUS_RIGHT";
-const char* kLcmStatusTelemetryChannel = "IIWA_STATUS_TELEMETRY_RIGHT";
-const char* kLcmCommandChannel = "IIWA_COMMAND_RIGHT";
+const char* kLcmStatusChannel = "IIWA_STATUS_THANOS";
+const char* kLcmStatusTelemetryChannel = "IIWA_STATUS_TELEMETRY_THANOS";
+const char* kLcmCommandChannel = "IIWA_COMMAND_THANOS";
 const double kJointLimitSafetyMarginDegree = 1;
 const double kJointTorqueSafetyMarginNm = 60;
 const double kJointTorqueSafetyMarginScale[kNumJoints] = {

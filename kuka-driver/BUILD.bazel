@@ -19,9 +19,9 @@ cc_binary(
     ],
 )
 cc_binary(
-    name = "kuka_driver_left",
+    name = "kuka_driver_medusa",
     srcs = [
-        "kuka_driver_left.cc",
+        "kuka_driver_medusa.cc",
         "low_pass_filter.h",
     ],
     deps = [
@@ -33,9 +33,9 @@ cc_binary(
     ],
 )
 cc_binary(
-    name = "kuka_driver_right",
+    name = "kuka_driver_thanos",
     srcs = [
-        "kuka_driver_right.cc",
+        "kuka_driver_thanos.cc",
         "low_pass_filter.h",
     ],
     deps = [
