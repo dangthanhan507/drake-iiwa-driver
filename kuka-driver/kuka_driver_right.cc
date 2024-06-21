@@ -37,10 +37,10 @@ using drake::lcmt_iiwa_status_telemetry;
 namespace {
 
 const int kNumJoints = 7;
-const int kDefaultPort = 30004;
-const char* kLcmStatusChannel = "IIWA_STATUS";
-const char* kLcmStatusTelemetryChannel = "IIWA_STATUS_TELEMETRY";
-const char* kLcmCommandChannel = "IIWA_COMMAND";
+const int kDefaultPort = 30002;
+const char* kLcmStatusChannel = "IIWA_STATUS_RIGHT";
+const char* kLcmStatusTelemetryChannel = "IIWA_STATUS_TELEMETRY_RIGHT";
+const char* kLcmCommandChannel = "IIWA_COMMAND_RIGHT";
 const double kJointLimitSafetyMarginDegree = 1;
 const double kJointTorqueSafetyMarginNm = 60;
 const double kJointTorqueSafetyMarginScale[kNumJoints] = {

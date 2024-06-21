@@ -18,5 +18,33 @@ cc_binary(
         "@lcm",
     ],
 )
+cc_binary(
+    name = "kuka_driver_left",
+    srcs = [
+        "kuka_driver_left.cc",
+        "low_pass_filter.h",
+    ],
+    deps = [
+        "@drake//common:essential",
+        "@drake//lcmtypes:iiwa",
+        "@gflags",
+        "@kuka_fri//:kuka-fri-lib",
+        "@lcm",
+    ],
+)
+cc_binary(
+    name = "kuka_driver_right",
+    srcs = [
+        "kuka_driver_right.cc",
+        "low_pass_filter.h",
+    ],
+    deps = [
+        "@drake//common:essential",
+        "@drake//lcmtypes:iiwa",
+        "@gflags",
+        "@kuka_fri//:kuka-fri-lib",
+        "@lcm",
+    ],
+)
 
 add_lint_tests()
